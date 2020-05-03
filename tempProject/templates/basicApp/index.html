@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+{% extends "basicApp/base.html" %}
+{% load extra %} #check templatetags/extra.py
+
+  {% block body_block %}
+    <h1>welcome to Home page</h1>
+    <h3>this is an example</h3>
+    <h3>{{ text | cut_str:'hello' }}</h3>
+    <h3>{{ number | add:"10"}}</h3>
+  {% endblock %}
